@@ -2,8 +2,8 @@
 This is our Music Mixer project for our Multimedia Authoring course in Interactive Media Design. Made by Noah Kennedy and Luciano Clementi. 
 
 ## Installation 
-- Hit the green <> Code button
-- Hit 'Download ZIP'
+- Click the green <> Code button
+- Click 'Download ZIP'
 - Extract files
 
 ## Usage 
