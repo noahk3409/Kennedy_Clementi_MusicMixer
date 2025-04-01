@@ -14,5 +14,5 @@ The Music Mixer is a web-based application that allows users to mix audio tracks
 Use the Music Mixer page to play audio files, mix and match sounds, and create a beat!
 
 ## Credits
-Noah Kennedy
+Noah Kennedy,
 Luciano Clementi
