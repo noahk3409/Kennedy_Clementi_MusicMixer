@@ -42,9 +42,15 @@ body {
     padding-top: 200px;
     margin: auto;
     display: block;
-
+    
 }
 
 h1 {color: white;
     text-align: center;
+}
+
+.draggable:hover {
+    transform: scale(1.2);
+    transition: transform 0.1s ease-in-out;
+    cursor: grab;
 }

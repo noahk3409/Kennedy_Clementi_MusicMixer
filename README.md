@@ -16,3 +16,6 @@ Use the Music Mixer page to play audio files, mix and match sounds, and create a
 ## Credits
 Noah Kennedy,
 Luciano Clementi
+
+## License 
+MIT - See included license file.
