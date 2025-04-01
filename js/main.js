@@ -22,12 +22,12 @@ const dropzone = document.querySelector(".boombox");
 
 instruments.forEach(instrument => {
     instrument.addEventListener("dragstart", (e) => {
-        e.dataTransfer.setData("text/plain", e.target.id);
+        e.dataTransfer.setData("text/plain", e.target.getAttribute("id"));
     });
 });
 
 dropzone.addEventListener("dragover", (e) => {
-    e.preventDefault(); // Necessary to allow dropping
+    e.preventDefault(); // Allows dropping inside boombox
 });
 
 dropzone.addEventListener("drop", (e) => {
@@ -36,7 +36,7 @@ dropzone.addEventListener("drop", (e) => {
     
     if (!instrumentId) return; // Prevent invalid queries
     
-    const instrument = document.getElementById(instrumentId);
+    const instrument = document.querySelector(`[id='${instrumentId}']`);
     
     if (instrument) {
         let clone = instrument.cloneNode(true);
