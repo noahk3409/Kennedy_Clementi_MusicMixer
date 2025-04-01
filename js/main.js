@@ -1,29 +1,17 @@
 console.log("JS file connected");
 
-const elements = document.querySelectorAll(".draggable")
-
-if(elements){
-    for (let element of elements) {
-        element.addEventListener("dragstart", dragstartHandler)
-        element.addEventListener("dragend", dragendHandler)
-    }
-}
-
-function dragstartHandler(ev) {
-    console.log("drag was started")
-}
-
-function dragendHandler(ev) {
-    console.log("drag was ended")
-}
-
 const instruments = document.querySelectorAll(".draggable");
 const dropzone = document.querySelector(".boombox");
 
 instruments.forEach(instrument => {
     instrument.addEventListener("dragstart", (e) => {
+console.log("drag was started")
         e.dataTransfer.setData("text/plain", e.target.getAttribute("id"));
     });
+
+instrument.addEventListener("dragover", (e) => {
+console.log("drag was ended")
+});
 });
 
 dropzone.addEventListener("dragover", (e) => {
