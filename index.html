@@ -8,14 +8,18 @@
     </head>
     <body>
 
-        <h1 class="hidden">Music Mixer</h1>
-        <div class="boombox">
-        <img src="images/music mixer final.svg" alt="boombox">
+        <h1>Hip-Hop Music Mixer</h1>
+        <div class="instruments">
+            <ul>
+                <li class="draggable" id="drum" draggable="true"><img src="images/drummm.png" alt="A drum set"></li>
+                <li class="draggable" id="brass" draggable="true"><img src="images/saxophone.jpg" alt="a brass instrument"></li>
+                <li class="draggable" id="keyboard" draggable="true"><img src="images/keyboard.jpg" alt="A keyboard"></li>
+                <li class="draggable" id="scratch" draggable="true"><img src="images/scratchh.jpg" alt="a dj scratch record player"></li>
+            </ul>
         </div>
-
-        <h1>Music Mixer</h1>
-        <!-- link just above the closing body tag
-        this allows for the entire DOM tree to be built -->
+        <div class="boombox">
+        <img src="images/music mixer final.svg" alt="boombox" id="#dropzone">
+        </div>
 
        <script src="js/main.js"></script> 
     </body>
