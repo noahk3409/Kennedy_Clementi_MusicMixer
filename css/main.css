@@ -37,6 +37,22 @@ body {
 
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.boombox-pulse {
+    animation: pulse 1s infinite;
+}
+
 .boombox {
     max-width: 500px;
     padding-top: 200px;
@@ -45,8 +61,10 @@ body {
     
 }
 
-h1 {color: white;
+.header {
+    color: rgb(255, 255, 255);
     text-align: center;
+    margin-top: 15px;
 }
 
 .draggable:hover {
