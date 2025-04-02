@@ -23,8 +23,15 @@ function dropped(e) {
     this.appendChild(draggedPiece);
 
     draggedPiece.style.display = 'none';
+
     stopAllAudio();
     playAllAudioInDropzone();
+
+
+    const boombox = document.querySelector('.boombox');
+    if (boombox) {
+        boombox.classList.add('boombox-pulse'); 
+    }
 }
 
 function stopAllAudio() {
@@ -36,7 +43,7 @@ function stopAllAudio() {
 }
 
 function playAllAudioInDropzone() {
-    
+
     const instrumentsInDropzone = dropzone.querySelectorAll('.draggable');
     
     instrumentsInDropzone.forEach(instrument => {
@@ -49,10 +56,11 @@ function playAllAudioInDropzone() {
     });
 }
 
-// event listeners
-drum.addEventListener('dragstart', startedDragging);
-brass.addEventListener('dragstart', startedDragging);
-keyboard.addEventListener('dragstart', startedDragging);
-scratch.addEventListener('dragstart', startedDragging);
+// Event listeners
+instruments.forEach(instrument => {
+    instrument.addEventListener('dragstart', startedDragging);
+});
 dropzone.addEventListener('dragover', draggedOver);
 dropzone.addEventListener('drop', dropped);
+
+
