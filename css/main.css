@@ -45,8 +45,10 @@ body {
     
 }
 
-h1 {color: white;
+.header {
+    color: rgb(255, 255, 255);
     text-align: center;
+    margin-top: 15px;
 }
 
 .draggable:hover {
