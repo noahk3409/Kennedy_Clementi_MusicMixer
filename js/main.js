@@ -16,7 +16,6 @@ function draggedOver(e) {
     e.preventDefault();
 }
 
-
 function dropped(e) {
     console.log("drop called");
     e.preventDefault();
@@ -55,6 +54,16 @@ function playAllAudioInDropzone() {
         activeAudioElements.push(audio);
     });
 }
+
+
+let volume = document.querySelector("#volume-slider");
+volume.addEventListener("input", function (e) {
+    let volumeLevel = e.target.value / 100; 
+    activeAudioElements.forEach(audio => {
+        audio.volume = volumeLevel;
+    });
+});
+
 
 // Event listeners
 instruments.forEach(instrument => {

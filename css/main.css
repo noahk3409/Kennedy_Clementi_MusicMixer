@@ -72,3 +72,15 @@ body {
     transition: transform 0.1s ease-in-out;
     cursor: grab;
 }
+
+.boombox:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
+    cursor: grab;
+}
+
+.volume-slider {
+    margin: auto;
+    display:block;
+    margin-top: 30px;
+}
