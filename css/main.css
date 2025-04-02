@@ -37,6 +37,22 @@ body {
 
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.boombox-pulse {
+    animation: pulse 1s infinite;
+}
+
 .boombox {
     max-width: 500px;
     padding-top: 200px;
