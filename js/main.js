@@ -22,6 +22,8 @@ console.log("JS file connected");
 
 //Testing and debugging for correct audio playback, drag and drop, volume control, and animation responsiveness.
 
+//Validated HTML and CSS to debug. 
+
 //Finished
 
 
