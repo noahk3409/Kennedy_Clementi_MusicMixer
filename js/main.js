@@ -1,5 +1,30 @@
 console.log("JS file connected");
 
+// Music Mixer plan
+
+//Goal: A 90s hip-hop themed drag-and-drop music mixer.
+
+//Created a layout structure.
+
+//Chose a color scheme and background images to match the hip-hop graffiti theme.
+
+//Set up a basic HTML structure.
+
+//Linked CSS (main.css) and JavaScript (main.js) files.
+
+//Styled the page with CSS, adding a background image and styling the instrument list.
+
+//Implemented a drag and drop feature in JavaScript with event listeners for dragstart, dragover, and drop events.
+
+//Added audio files to allow for playback when drag and dropping onto boombox.
+
+//Added volume slider in HTML and JavaScript, adjusting it position in CSS to allow for volume control. 
+
+//Testing and debugging for correct audio playback, drag and drop, volume control, and animation responsiveness.
+
+//Finished
+
+
 const instruments = document.querySelectorAll(".draggable");
 const dropzone = document.querySelector(".boombox");
 let draggedPiece;
